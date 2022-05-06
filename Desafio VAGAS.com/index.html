@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Frontend VAGAS.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <h1>Formulário <br/> para compra de <br/> <span>Pacotes de Stickers</span> </h1>
+        </header>
+
+        <form id="form">
+            <fieldset>
+                <legend><h2>Quais stickers:</h2></legend>
+
+                <div class="stickers--checkbox">
+                    <div class="checkbox--row">
+                        <input type="checkbox" id="react" name="sticker" value="react">
+                        <label for="react">React</label>
+                    </div>
+                    
+                    <div class="checkbox--row">
+                        <input type="checkbox" id="vue" name="sticker" value="vue">
+                        <label for="vue">Vue</label>
+                    </div>
+
+                    <div class="checkbox--row">
+                        <input type="checkbox" id="angular" name="sticker" value="angular">
+                        <label for="angular">Angular</label>
+                    </div>   
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Quantos stickers de cada?</h2></legend>
+                <div class="counter">
+                    <button id="button--decrease" ><div>-</div></button>
+                    <div id="counter--number">0</div>
+                    <button id="button--increase"><p>+</p></button>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="message"><h2>Observações:</h2></label>
+                <textarea id="message" cols="" rows=""></textarea>
+            </fieldset>
+        </form>
+
+        <footer>
+            <button form="form" type="submit" id="button--submit">ENVIAR</button>
+        </footer>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
