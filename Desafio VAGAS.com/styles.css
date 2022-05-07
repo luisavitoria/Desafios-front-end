@@ -74,6 +74,8 @@ fieldset .stickers--checkbox {
     cursor: pointer;
 }
 
+
+
 .checkbox--row input + label::before {
     content: "";
     position: absolute;
@@ -112,6 +114,7 @@ fieldset .stickers--checkbox {
     background-color: #191847;
 
 }
+
 
 .stickers--checkbox .checkbox--row label {
     font-weight: 400;
@@ -198,19 +201,19 @@ footer {
 }
 
 footer #button--submit {
-    background-color: #2F3676;
+    background-color: #C5CFD6;
     padding: 8px 32px;
     border-radius: 7px;
-    border: none;
+    border: 2px solid #555555;
     font-weight: 700;
     font-size: 18px;
-    color: #fff;
+    color: #555555;
     line-height: 22px;
     cursor: pointer;
 }
 
-footer #button--submit:hover {
+/*footer #button--submit:hover {
     background-color: #191847;
-    border: 2px solid #2F3676;
     border-radius: 7px;
 }
+*/
