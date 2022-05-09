@@ -74,8 +74,6 @@ fieldset .stickers--checkbox {
     cursor: pointer;
 }
 
-
-
 .checkbox--row input + label::before {
     content: "";
     position: absolute;
@@ -86,7 +84,7 @@ fieldset .stickers--checkbox {
     height: 24px;
     border: none;
     border-radius: 3px;
-    background-color: #2F3676;
+    background-color: var(--labelBeforeBackColor, #2F3676);
     cursor: pointer;
 
 }
@@ -114,7 +112,6 @@ fieldset .stickers--checkbox {
     background-color: #191847;
 
 }
-
 
 .stickers--checkbox .checkbox--row label {
     font-weight: 400;
@@ -197,7 +194,11 @@ footer {
     background-color: #DDE3E9;
     padding: 32px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+footer #success--message {
+    color: #00C57C;
 }
 
 footer #button--submit {
@@ -211,9 +212,3 @@ footer #button--submit {
     line-height: 22px;
     cursor: pointer;
 }
-
-/*footer #button--submit:hover {
-    background-color: #191847;
-    border-radius: 7px;
-}
-*/
